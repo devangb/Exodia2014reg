@@ -1,0 +1,265 @@
+<%= form_for @register do |f| %>
+	
+  <div><%= f.label :name %><br />
+  <%= f.text_field :name, :required => true %></div>
+
+  <div><%= f.label "Exodia ID" %><br />
+  <%= f.number_field :exodia_id, :required => true %></div>
+
+  <div><%= f.label :email %><br />
+  <%= f.text_field :email, :required => true %></div>
+
+  <div><%= f.label :phone %><br />
+  <%= f.text_field :phone, :required => true %></div>
+
+  <div><%= f.label "College Name" %><br />
+  <%= f.text_field :college_name, :required => true %></div>
+
+  <!--THE IMAGES ARE PLACED IN AN UNORDERED LIST-->
+<ul class="enlarge"> <!--We give the list a class so that we can style it seperately from other unordered lists-->
+<!--First Image-->
+<li>
+<%= f.check_box :instrumania %>
+<img src="http://i.imgur.com/uixrFBO.jpg" width="150px" height="100px" alt="Instrumania" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/uixrFBO.jpg" alt="Instrumania" /> <!--popup image-->
+<br />Instrumania <!--caption appears under the popup image-->
+</span>
+</li>
+<li>
+<%= f.check_box :bandslam %>
+<img src="http://i.imgur.com/FAtKw2S.jpg" width="150px" height="100px" alt="BandSlam" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/FAtKw2S.jpg" alt="BandSlam" /> <!--popup image-->
+<br />BandSlam <!--caption appears under the popup image-->
+</span>
+</li>
+
+<!--Second Image-->
+<li>
+<%= f.check_box :idol %>
+<img src="http://i.imgur.com/V2HSTvv.jpg" width="150px" height="100px" alt="Exodia Idol" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/V2HSTvv.jpg" alt="Exodia Idol" /> <!--popup image-->
+<br />Exodia Idol <!--caption appears under the popup image-->
+</span>
+</li>
+<!--Third Image-->
+<li>
+<div><%= f.check_box :groove %>
+<img src="http://i.imgur.com/kGagcZt.jpg" width="150px" height="100px" alt="Groove Fanatics" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/kGagcZt.jpg" alt="Groove Fanatics" /> <!--popup image-->
+<br />Groove Fanatics <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :synchronians %>
+<img src="http://i.imgur.com/qLC1Ycl.jpg" width="150px" height="100px" alt="Synchronians" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/qLC1Ycl.jpg" alt="Synchronians" /> <!--popup image-->
+<br />Synchronians <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :bigstink %>
+<img src="http://i.imgur.com/savzDDy.jpg" width="150px" height="100px" alt="Big Stink" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/savzDDy.jpg" alt="Big Stink" /> <!--popup image-->
+<br />Big Stink<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :apptitude %>
+<img src="http://i.imgur.com/ogQ0wlK.jpg" width="150px" height="100px" alt="APPtitude" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/ogQ0wlK.jpg" alt="APPtitude" /> <!--popup image-->
+<br />APPtitude<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :wut %>
+<img src="http://i.imgur.com/SPIHKYq.jpg" width="150px" height="100px" alt="Wind-up-troy" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/SPIHKYq.jpg" alt="Wind-up-troy" /> <!--popup image-->
+<br />Wind-up-troy <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :junkyard %>
+<img src="http://i.imgur.com/bv8cbxq.jpg" width="150px" height="100px" alt="Junkyard Wars" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/bv8cbxq.jpg" alt="Junkyard Wars" /> <!--popup image-->
+<br />Junkyard Wars<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :dementia %>
+<img src="http://i.imgur.com/1BVWFKP.jpg" width="150px" height="100px" alt="Dementia" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/1BVWFKP.jpg" alt="Dementia" /> <!--popup image-->
+<br />Dementia <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :dis %>
+<img src="http://i.imgur.com/CuDI1Fq.jpg" width="150px" height="100px" alt="Discover Image Science" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/CuDI1Fq.jpg" alt="Discover Image Science" /> <!--popup image-->
+<br />Discover Image Science<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :thesis %>
+<img src="http://i.imgur.com/8q7D5vK.jpg" width="150px" height="100px" alt="Quick Thesis" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/8q7D5vK.jpg" alt="Quick Thesis" /> <!--popup image-->
+<br />Quick Thesis<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :electrowar %>
+<img src="http://i.imgur.com/8vdgF7D.jpg" width="150px" height="100px" alt="Electrowar" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/8vdgF7D.jpg" alt="Electrowar" /> <!--popup image-->
+<br />Electrowar<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :circuit %>
+<img src="http://i.imgur.com/FvhtAdf.jpg" width="150px" height="100px" alt="Circuit Hunt" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/FvhtAdf.jpg" alt="Circuit Hunt" /> <!--popup image-->
+<br />Circuit Hunt<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :dtoe %>
+<img src="http://i.imgur.com/A0cb2MW.jpg" width="150px" height="100px" alt="Decode to Encode" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/A0cb2MW.jpg" alt="Decode to Encode" /> <!--popup image-->
+<br />Decode to Encode <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :coalf %>
+<img src="http://i.imgur.com/TVZCmCz.jpg" width="150px" height="100px" alt="COA-Line Follower" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/TVZCmCz.jpg" alt="COA-Line Follower" /> <!--popup image-->
+<br />COA-Line Follower<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :coasw %>
+<img src="http://i.imgur.com/cPRwsDv.jpg" width="150px" height="100px" alt="COA-Sumo Wars" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/cPRwsDv.jpg" alt="COA-Sumo Wars" /> <!--popup image-->
+<br />Clash of Avatars-Sumo Wars<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :arcade %>
+<img src="http://i.imgur.com/H54CR08.jpg" width="150px" height="100px" alt="arCAD" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/H54CR08.jpg" alt="arCAD" /> <!--popup image-->
+<br />arCAD<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :nitro %>
+<img src="http://i.imgur.com/yPBp2aD.jpg" width="150px" height="100px" alt="Nitro Blaze" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/yPBp2aD.jpg" alt="Nitro Blaze" /> <!--popup image-->
+<br />Nitro Blaze<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :hover %>
+<img src="http://i.imgur.com/2Qhq0Vn.jpg" width="150px" height="100px" alt="Hoverace" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/2Qhq0Vn.jpg" alt="Hoverace" /> <!--popup image-->
+<br />Hoverace<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :liar %>
+<img src="http://i.imgur.com/IvN7h2S.jpg" width="150px" height="100px" alt="Biggest Liar" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/IvN7h2S.jpg" alt="Biggest Liar" /> <!--popup image-->
+<br />Biggest Liar<!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :devil %>
+<img src="http://i.imgur.com/cDeX8dW.jpg" width="150px" height="100px" alt="Devil's Advocate" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/cDeX8dW.jpg" alt="Devil's Advocate" /> <!--popup image-->
+<br />Devil's Advocate <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :gow %>
+<img src="http://i.imgur.com/4jR1HCh.jpg" width="150px" height="100px" alt="Game of Words" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/4jR1HCh.jpg" alt="Game of Words" /> <!--popup image-->
+<br />Game of Words <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :survivor %>
+<img src="http://i.imgur.com/p1p05SU.jpg" width="150px" height="100px" alt="Survivor" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/p1p05SU.jpg" alt="Survivor" /> <!--popup image-->
+<br />Survivor <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :nfs %>
+<img src="http://i.imgur.com/p1p05SU.jpg" width="150px" height="100px" alt="NFS-Most Wanted" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/p1p05SU.jpg" alt="Need for Speed-Most Wanted" /> <!--popup image-->
+<br />Need for Speed-Most Wanted <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :cs %>
+<img src="http://i.imgur.com/p1p05SU.jpg" width="150px" height="100px" alt="Counter Strike" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/p1p05SU.jpg" alt="Counter Strike" /> <!--popup image-->
+<br />Counter Strike <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :fifa %>
+<img src="http://i.imgur.com/p1p05SU.jpg" width="150px" height="100px" alt="Fifa 14" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/p1p05SU.jpg" alt="Fifa 14" /> <!--popup image-->
+<br />Fifa 14 <!--caption appears under the popup image-->
+</span>
+</li>
+</ul>  
+  <div><%= f.submit "Register", class: "btn btn-small btn-primary" %></div>
+<% end %>
