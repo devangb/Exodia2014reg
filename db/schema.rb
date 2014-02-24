@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140222092825) do
+ActiveRecord::Schema.define(version: 20140224111057) do
 
   create_table "registers", force: true do |t|
     t.string   "name"
@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(version: 20140222092825) do
     t.boolean  "arcade"
     t.boolean  "nitro"
     t.boolean  "hover"
+    t.boolean  "two"
+    t.boolean  "three"
   end
 
 end

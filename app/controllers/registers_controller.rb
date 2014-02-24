@@ -3,8 +3,6 @@ class RegistersController < ApplicationController
   	@register = Register.new
   end
 
-  def update
-  end
 
   def create
   	@register = Register.new(register_params)
@@ -19,6 +17,6 @@ class RegistersController < ApplicationController
                                       :idol, :groove, :synchronians, :bigstink, :apptitude, :wut,
                                       :junkyard, :dementia, :dis, :thesis, :electrowar, :circuit,
                                       :dtoe, :coalf, :coasw, :arcade, :nitro, :hover, :liar, :devil,
-                                      :gow, :survivor)
+                                      :gow, :survivor, :cs, :nfs, :fifa)
   end
 end
