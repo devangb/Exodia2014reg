@@ -2,12 +2,14 @@ ul.enlarge{
 list-style-type:none; /*remove the bullet point*/
 margin-left:0;
 }
+
 ul.enlarge li{
 display:inline-block; /*places the images in a line*/
 position: relative;
 z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
 margin:10px 40px 0 20px;
 }
+
 ul.enlarge img{
 background-color:#eae9d4;
 padding: 6px;

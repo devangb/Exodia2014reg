@@ -1,20 +1,31 @@
 <%= form_for @register do |f| %>
-	
-  <div><%= f.label :name %><br />
-  <%= f.text_field :name, :required => true %></div>
 
-  <div><%= f.label "Exodia ID" %><br />
+<fieldset>
+    <legend>Fill your Details</legend>
+	
+  <div class="row">
+<div class="large-12 columns"><%= f.label :name %><br />
+  <%= f.text_field :name, :required => true %></div>
+</div>
+
+<div class="row">
+  <div class="large-6 columns"><%= f.label "Exodia ID" %><br />
   <%= f.number_field :exodia_id, :required => true %></div>
 
-  <div><%= f.label :email %><br />
+<div class="large-6 columns"><%= f.label "College Name" %><br />
+  <%= f.text_field :college_name, :required => true %></div>
+</div>
+
+<div class="row">
+  <div class="large-6 columns"><%= f.label :email %><br />
   <%= f.text_field :email, :required => true %></div>
 
-  <div><%= f.label :phone %><br />
+  <div class="large-6 columns"><%= f.label :phone %><br />
   <%= f.text_field :phone, :required => true %></div>
+</div>
 
-  <div><%= f.label "College Name" %><br />
-  <%= f.text_field :college_name, :required => true %></div>
-
+</fieldset>
+  
   <!--THE IMAGES ARE PLACED IN AN UNORDERED LIST-->
 <ul class="enlarge"> <!--We give the list a class so that we can style it seperately from other unordered lists-->
 <!--First Image-->
