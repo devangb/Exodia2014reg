@@ -1,7 +1,7 @@
 <%= form_for @register do |f| %>
 
 <fieldset>
-    <legend>Fill your Details</legend>
+    <legend>Fill your Details, Tick the events to register in and Click Register button (Only team leader details required for team event registration)</legend>
 	
   <div class="row">
 <div class="large-12 columns"><%= f.label :name %><br />
@@ -25,10 +25,18 @@
 </div>
 
 </fieldset>
+
+<div class="row">
+<div class="text-center">
+<a href='#' onclick="javascript:window.open('http://www.foreseegame.com/PromotionalActivities.aspx?paramPro=IITMandi')"><div class="button expand forseegame">Get your Exodia Id</div></a> (If you have not generated yet)
+</div>
+</div>
   
   <!--THE IMAGES ARE PLACED IN AN UNORDERED LIST-->
 <ul class="enlarge"> <!--We give the list a class so that we can style it seperately from other unordered lists-->
 <!--First Image-->
+<div class="row event-section">
+<div class="text-center"> <h4>Cultural Events</h4></div>
 <li>
 <%= f.check_box :instrumania %>
 <img src="http://i.imgur.com/uixrFBO.jpg" width="150px" height="100px" alt="Instrumania" /> <!--thumbnail image-->
@@ -82,7 +90,10 @@
 <br />Big Stink<!--caption appears under the popup image-->
 </span>
 </li>
+</div>
 
+<div class="row event-section">
+<div class="text-center"> <h4>Technical Events</h4></div>
 <li>
 <%= f.check_box :apptitude %>
 <img src="http://i.imgur.com/ogQ0wlK.jpg" width="150px" height="100px" alt="APPtitude" /> <!--thumbnail image-->
@@ -155,6 +166,7 @@
 </span>
 </li>
 
+
 <li>
 <%= f.check_box :dtoe %>
 <img src="http://i.imgur.com/A0cb2MW.jpg" width="150px" height="100px" alt="Decode to Encode" /> <!--thumbnail image-->
@@ -208,7 +220,10 @@
 <br />Hoverace<!--caption appears under the popup image-->
 </span>
 </li>
+</div>
 
+<div class="row event-section">
+<div class="text-center"> <h4>Literary Events</h4></div>
 <li>
 <%= f.check_box :liar %>
 <img src="http://i.imgur.com/IvN7h2S.jpg" width="150px" height="100px" alt="Biggest Liar" /> <!--thumbnail image-->
@@ -244,7 +259,10 @@
 <br />Survivor <!--caption appears under the popup image-->
 </span>
 </li>
+</div>
 
+<div class="row event-section">
+<div class="text-center"> <h4>Gaming Events</h4></div>
 <li>
 <%= f.check_box :nfs %>
 <img src="http://i.imgur.com/p1p05SU.jpg" width="150px" height="100px" alt="NFS-Most Wanted" /> <!--thumbnail image-->
@@ -271,6 +289,10 @@
 <br />Fifa 14 <!--caption appears under the popup image-->
 </span>
 </li>
+</div>
 </ul>  
-  <div><%= f.submit "Register", class: "btn btn-small btn-primary" %></div>
+  <div class="row">
+<div class="text-center"><%= f.submit "Register", class: " register button [secondary success alert]" %>
+</div>
+</div>
 <% end %>
