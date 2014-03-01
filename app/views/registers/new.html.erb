@@ -7,7 +7,11 @@
 <div class="large-12 columns"><%= f.label :name %><br />
   <%= f.text_field :name, :required => true %></div>
 </div>
-
+<div class="row exodia-id">
+<div class="text-center">
+<a href='#' onclick="javascript:window.open('http://www.foreseegame.com/PromotionalActivities.aspx?paramPro=IITMandi')"><div class="button expand forseegame">Get your Exodia Id</div></a> (If you have not generated yet)
+</div>
+</div>
 <div class="row">
   <div class="large-6 columns"><%= f.label "Exodia ID" %><br />
   <%= f.text_field :exodia_id, :required => true %></div>
@@ -24,17 +28,48 @@
   <%= f.text_field :phone, :required => true %></div>
 </div>
 
+<div class="row ">
+  <div class="large-12 columns"><%= f.label :Accomodation %><br />
+  <%= f.check_box :two %><%= f.label :two, "2 days" %><t /><t /><%= f.check_box :three %><%= f.label :three, "3 days" %></div>
+</div>
+
 </fieldset>
 
-<div class="row">
-<div class="text-center">
-<a href='#' onclick="javascript:window.open('http://www.foreseegame.com/PromotionalActivities.aspx?paramPro=IITMandi')"><div class="button expand forseegame">Get your Exodia Id</div></a> (If you have not generated yet)
-</div>
-</div>
+
   
   <!--THE IMAGES ARE PLACED IN AN UNORDERED LIST-->
 <ul class="enlarge"> <!--We give the list a class so that we can style it seperately from other unordered lists-->
 <!--First Image-->
+<div class="row event-section">
+<div class="text-center"> <h4>Fashion Events</h4></div>
+<li>
+<%= f.check_box :diwa %>
+<img src="http://i.imgur.com/uixrFBO.jpg" width="150px" height="100px" alt="Miss Diva" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/uixrFBO.jpg" alt="Miss Diva" /> <!--popup image-->
+<br />Miss Diva <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :couture %>
+<img src="http://i.imgur.com/uixrFBO.jpg" width="150px" height="100px" alt="Couture" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/uixrFBO.jpg" alt="Couture" /> <!--popup image-->
+<br />Couture <!--caption appears under the popup image-->
+</span>
+</li>
+
+<li>
+<%= f.check_box :mrmiss %>
+<img src="http://i.imgur.com/uixrFBO.jpg" width="150px" height="100px" alt="Mr & Miss Exodia" /> <!--thumbnail image-->
+<span> <!--span contains the popup image-->
+<img src="http://i.imgur.com/uixrFBO.jpg" alt="Mr & Miss Exodia" /> <!--popup image-->
+<br />Mr & Miss Exodia <!--caption appears under the popup image-->
+</span>
+</li>
+
+
 <div class="row event-section">
 <div class="text-center"> <h4>Cultural Events</h4></div>
 <li>

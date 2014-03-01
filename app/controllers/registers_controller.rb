@@ -13,10 +13,10 @@ class RegistersController < ApplicationController
   private
 
   def register_params
-    params.require(:register).permit(:name, :phone, :email, :exodia_id, :instrumania, :bandslam,
+    params.require(:register).permit(:name, :phone, :email, :exodia_id, :college_name, :instrumania, :bandslam,
                                       :idol, :groove, :synchronians, :bigstink, :apptitude, :wut,
                                       :junkyard, :dementia, :dis, :thesis, :electrowar, :circuit,
                                       :dtoe, :coalf, :coasw, :arcade, :nitro, :hover, :liar, :devil,
-                                      :gow, :survivor, :cs, :nfs, :fifa)
+                                      :gow, :survivor, :cs, :nfs, :fifa, :two, :three)
   end
 end
