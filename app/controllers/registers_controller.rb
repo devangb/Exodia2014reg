@@ -17,6 +17,6 @@ class RegistersController < ApplicationController
                                       :idol, :groove, :synchronians, :bigstink, :apptitude, :wut,
                                       :junkyard, :dementia, :dis, :thesis, :electrowar, :circuit,
                                       :dtoe, :coalf, :coasw, :arcade, :nitro, :hover, :liar, :devil,
-                                      :gow, :survivor, :cs, :nfs, :fifa, :two, :three)
+                                      :gow, :survivor, :cs, :nfs, :fifa, :two, :three, :diwa, :mrmiss, :couture)
   end
 end

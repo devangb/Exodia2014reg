@@ -1,14 +1,17 @@
 <%= form_for @register do |f| %>
 
 <fieldset>
-    <legend>Fill your Details, Tick the events to register in and Click Register button (Only team leader details required for team event registration)</legend>
+    <legend>Fill your Details, Tick the events to register in and Click Register button (Only team leader details required for team event registration. Team details to be sent at events mail id)</legend>
 	
-  <div class="row">
-<div class="large-12 columns"><%= f.label :name %><br />
+<div class="row">
+  <div class="large-12 columns"><%= f.label :name %><br />
   <%= f.text_field :name, :required => true %></div>
+  </div>
 </div>
-<div class="large-6 columns"><%= f.label "College Name" %><br />
+<div class="row">
+  <div class="large-12 columns"><%= f.label "College Name" %><br />
   <%= f.text_field :college_name, :required => true %></div>
+  </div>
 </div>
 
 <div class="row">

@@ -1,0 +1,81 @@
+<%= will_paginate @registers %>
+
+<table>
+	<tr>
+      <td>Name</td>
+      <td>College</td>
+      <td>email</td>
+      <td>phone</td>
+      <td>2 days Accomodation</td>
+      <td>3 day Accomodation</td>
+      <td>Miss Diva</td>
+      <td>Couture</td>
+      <td>Mr&Miss Exodia</td>
+      <td>instrumania</td>
+      <td>bandslam</td>
+      <td>idol</td>
+      <td>groove</td>
+      <td>synchronians</td>
+      <td>big stink</td>
+      <td>apptitude</td>
+      <td>Wind up troy</td>
+      <td>junkyard</td>
+      <td>dementia</td>
+      <td>Discover image science</td>
+      <td>quick thesis</td>
+      <td>electrowar</td>
+      <td>circuit</td>
+      <td>Decode to encode</td>
+      <td>Line follower</td>
+      <td>Sumo wars</td>
+      <td>Arcad</td>
+      <td>Nitro blaze</td>
+      <td>hoverace</td>
+      <td>Biggest liar</td>
+      <td>Devil's advocate</td>
+      <td>Game of words</td>
+      <td>Survivor</td>
+      <td>Fray</td>
+    </tr>
+  <% @registers.each do |register| %>
+       <tr>
+      <td><%= register.name %></td>
+      <td><%= register.college_name %></td>
+      <td><%= register.email %></td>
+      <td><%= register.phone %></td>
+      <td><%= register.two %></td>
+      <td><%= register.three %></td>
+      <td><%= register.diwa %></td>
+      <td><%= register.couture %></td>
+      <td><%= register.mrmiss %></td>
+      <td><%= register.instrumania %></td>
+      <td><%= register.bandslam %></td>
+      <td><%= register.idol %></td>
+      <td><%= register.groove %></td>
+      <td><%= register.synchronians %></td>
+      <td><%= register.bigstink %></td>
+      <td><%= register.apptitude %></td>
+      <td><%= register.wut %></td>
+      <td><%= register.junkyard %></td>
+      <td><%= register.dementia %></td>
+      <td><%= register.dis %></td>
+      <td><%= register.thesis %></td>
+      <td><%= register.electrowar %></td>
+      <td><%= register.circuit %></td>
+      <td><%= register.dtoe %></td>
+      <td><%= register.coalf %></td>
+      <td><%= register.coasw %></td>
+      <td><%= register.arcade %></td>
+      <td><%= register.nitro %></td>
+      <td><%= register.hover %></td>
+      <td><%= register.liar %></td>
+      <td><%= register.devil %></td>
+      <td><%= register.gow %></td>
+      <td><%= register.survivor %></td>
+      <td><%= register.nfs %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= will_paginate @registers %>
+<%= link_to "Sign out", destroy_user_session_path, method: "delete" %>
