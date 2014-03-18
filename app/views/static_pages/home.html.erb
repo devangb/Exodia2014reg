@@ -10,7 +10,7 @@
   <% if signed_in? %>
   
       <div class="btn-group">
-      <button type="button" class="btn"><%= link_to "Database", users_path %></button>
+      <button type="button" class="btn"><%= link_to "Database", current_user %></button>
     </div>
     <%end%>
   </body>
