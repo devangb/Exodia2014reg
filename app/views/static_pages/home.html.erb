@@ -9,7 +9,7 @@
   <% if signed_in? %>
   
       <div class="btn-group">
-      <button type="button">Databas<%= link_to "e", current_user %></button><br />
+     <%= link_to "Database", current_user %><br /><br />
       <%= link_to "Sign out", destroy_user_session_path, method: "delete" %> 
     </div>
     <% else %>
